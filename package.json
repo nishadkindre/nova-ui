@@ -1,5 +1,5 @@
 {
-  "name": "nova-ui",
+  "name": "nova-ui-elements",
   "version": "1.0.0",
   "description": "A modern React component library for building stellar user interfaces.",
   "type": "module",
@@ -15,7 +15,6 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "jest",
-    "publish": "npm publish --access=public",
     "format": "prettier --write .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -33,8 +32,16 @@
     "customizable",
     "design-system"
   ],
-  "author": "Nishad Kindre",
+  "author": {
+    "name": "Nishad Kindre",
+    "email": "nishadkindre@gmail.com"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/nishadkindre/nova-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishadkindre/nova-ui.git"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
