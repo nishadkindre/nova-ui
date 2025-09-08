@@ -1,6 +1,6 @@
 # 📦 Publishing Your Package to npm
 
-This guide will walk you through the complete process of publishing your NovaUI package to the npm registry so users worldwide can install it with `npm install nova-ui`.
+This guide will walk you through the complete process of publishing your NovaUI package to the npm registry so users worldwide can install it with `npm install nova-ui-elements`.
 
 ## 📋 Prerequisites
 
@@ -19,7 +19,7 @@ Ensure your `package.json` is properly configured for publishing:
 
 ```json
 {
-  "name": "nova-ui",
+  "name": "nova-ui-elements",
   "version": "1.0.0",
   "description": "A React UI component library with Button and Input components",
   "main": "dist/index.js",
@@ -34,13 +34,13 @@ Ensure your `package.json` is properly configured for publishing:
   "keywords": ["react", "ui", "components", "design-system", "button", "input", "typescript"],
   "author": "Your Name <your.email@example.com>",
   "license": "MIT",
-  "homepage": "https://github.com/yourusername/nova-ui#readme",
+  "homepage": "https://github.com/yourusername/nova-ui-elements#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/nova-ui.git"
+    "url": "git+https://github.com/yourusername/nova-ui-elements.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/nova-ui/issues"
+    "url": "https://github.com/yourusername/nova-ui-elements/issues"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -89,7 +89,7 @@ A lightweight, accessible React UI component library built with TypeScript.
 ## Installation
 
 ```bash
-npm install nova-ui
+npm install nova-ui-elements
 ```
 ````
 
@@ -97,7 +97,7 @@ npm install nova-ui
 
 ```javascript
 import React from 'react';
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 
 function App() {
   return (
@@ -234,7 +234,7 @@ npm run test:build
 
 ```bash
 # Check if your package name is available
-npm view nova-ui
+npm view nova-ui-elements
 
 # If taken, you'll see package info
 # If available, you'll see an error (which is good!)
@@ -242,9 +242,9 @@ npm view nova-ui
 
 **If Name is Taken:**
 
-- Use a scoped package: `@yourusername/nova-ui`
-- Choose a different name: `nova-ui-components`, `awesome-ui-kit`
-- Add descriptive suffix: `nova-ui-react`, `nova-ui-lib`
+- Use a scoped package: `@yourusername/nova-ui-elements`
+- Choose a different name: `nova-ui-elements-components`, `awesome-ui-kit`
+- Add descriptive suffix: `nova-ui-elements-react`, `nova-ui-elements-lib`
 
 ### Step 6: Publish Your Package
 
@@ -259,7 +259,7 @@ npm publish
 
 ```bash
 # Update package.json name first
-# "name": "@yourusername/nova-ui"
+# "name": "@yourusername/nova-ui-elements"
 
 # Publish as public scoped package
 npm publish --access public
@@ -268,7 +268,7 @@ npm publish --access public
 ### Step 7: Verify Publication
 
 1. **Check on npm:**
-   - Visit `https://www.npmjs.com/package/nova-ui`
+   - Visit `https://www.npmjs.com/package/nova-ui-elements`
    - Verify all information looks correct
 
 2. **Test Installation:**
@@ -280,10 +280,10 @@ npm publish --access public
    npm init -y
 
    # Install your published package
-   npm install nova-ui
+   npm install nova-ui-elements
 
    # Test import
-   node -e "console.log(require('nova-ui'))"
+   node -e "console.log(require('nova-ui-elements'))"
    ```
 
 ## 🔄 Publishing Updates
@@ -322,7 +322,7 @@ git push && git push --tags
 
 ```json
 {
-  "name": "@yourusername/nova-ui"
+  "name": "@yourusername/nova-ui-elements"
 }
 ```
 
@@ -383,7 +383,7 @@ npm version prerelease --preid=beta
 npm publish --tag beta
 
 # Users install with:
-# npm install nova-ui@beta
+# npm install nova-ui-elements@beta
 ```
 
 ## 🔧 Troubleshooting
@@ -411,7 +411,7 @@ npm login
 npm whoami
 
 # Check package name ownership
-npm owner ls nova-ui
+npm owner ls nova-ui-elements
 ```
 
 **4. "Package size too large"**
@@ -428,17 +428,17 @@ npm pack --dry-run
 ```bash
 # Check bundle size
 npm pack
-tar -tzf nova-ui-1.0.0.tgz
+tar -tzf nova-ui-elements-1.0.0.tgz
 
 # Analyze what's included
-npx bundlephobia nova-ui
+npx bundlephobia nova-ui-elements
 ```
 
 ## 📊 Post-Publishing Checklist
 
 - [ ] Package appears on npmjs.com
-- [ ] Installation works: `npm install nova-ui`
-- [ ] Import works: `import { Button } from 'nova-ui'`
+- [ ] Installation works: `npm install nova-ui-elements`
+- [ ] Import works: `import { Button } from 'nova-ui-elements'`
 - [ ] TypeScript definitions load correctly
 - [ ] Documentation links work
 - [ ] README displays properly on npm
@@ -451,8 +451,8 @@ npx bundlephobia nova-ui
 Add to your README:
 
 ```markdown
-[![npm version](https://badge.fury.io/js/nova-ui.svg)](https://badge.fury.io/js/nova-ui)
-[![npm downloads](https://img.shields.io/npm/dm/nova-ui.svg)](https://www.npmjs.com/package/nova-ui)
+[![npm version](https://badge.fury.io/js/nova-ui-elements.svg)](https://badge.fury.io/js/nova-ui-elements)
+[![npm downloads](https://img.shields.io/npm/dm/nova-ui-elements.svg)](https://www.npmjs.com/package/nova-ui-elements)
 ```
 
 ### 2. Monitor Usage

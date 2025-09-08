@@ -21,10 +21,10 @@ NovaUI is a beginner-friendly React component library that provides ready-to-use
 
 ```bash
 # Install the library
-npm install nova-ui
+npm install nova-ui-elements
 
 # Use in your React app
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 
 function App() {
   return (

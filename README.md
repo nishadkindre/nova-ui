@@ -15,13 +15,13 @@ A modern, lightweight React component library built with TypeScript. Create beau
 ## 📦 Installation
 
 ```bash
-npm install nova-ui
+npm install nova-ui-elements
 ```
 
 ## 🚀 Quick Start
 
 ```jsx
-import { Button, Input, Badge } from 'nova-ui';
+import { Button, Input, Badge } from 'nova-ui-elements';
 
 function App() {
   return (
@@ -58,7 +58,7 @@ function App() {
 Access the complete design system for custom styling:
 
 ```jsx
-import { theme, typography, blue, green } from 'nova-ui';
+import { theme, typography, blue, green } from 'nova-ui-elements';
 
 // Use design tokens
 const customButton = {

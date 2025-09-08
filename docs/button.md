@@ -14,7 +14,7 @@ A button is an interactive element that users click to:
 ## 🚀 Basic Usage
 
 ```javascript
-import { Button } from 'nova-ui';
+import { Button } from 'nova-ui-elements';
 
 function MyComponent() {
   return <Button onClick={() => alert('Hello!')}>Click Me!</Button>;

@@ -7,7 +7,7 @@ This guide shows you how to use NovaUI components in real applications. Think of
 ### Simple Button Usage
 
 ```javascript
-import { Button } from 'nova-ui';
+import { Button } from 'nova-ui-elements';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
 ### Simple Input Usage
 
 ```javascript
-import { Input } from 'nova-ui';
+import { Input } from 'nova-ui-elements';
 
 function App() {
   const [name, setName] = useState('');
@@ -40,7 +40,7 @@ A simple contact form that collects user information:
 
 ```javascript
 import React, { useState } from 'react';
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -213,7 +213,7 @@ A more complex form with validation and multiple steps:
 
 ```javascript
 import React, { useState } from 'react';
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 
 function RegistrationForm() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -485,7 +485,7 @@ export default RegistrationForm;
 
 ```javascript
 import React from 'react';
-import { Button } from 'nova-ui';
+import { Button } from 'nova-ui-elements';
 
 function ProductCard({ product }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -641,7 +641,7 @@ function ProductGrid() {
 
 ```javascript
 import React, { useState } from 'react';
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 
 function ShoppingCart() {
   const [cartItems, setCartItems] = useState([
@@ -813,7 +813,7 @@ function ShoppingCart() {
 
 ```javascript
 import React, { useState, useEffect } from 'react';
-import { Input, Button } from 'nova-ui';
+import { Input, Button } from 'nova-ui-elements';
 
 function SearchExample() {
   const [query, setQuery] = useState('');
@@ -914,7 +914,7 @@ function SearchExample() {
 
 ```javascript
 import React, { useState } from 'react';
-import { Button } from 'nova-ui';
+import { Button } from 'nova-ui-elements';
 
 function MobileNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -20,7 +20,7 @@ This method simulates the exact experience users will have when installing your 
 
 ```bash
 # Navigate to your NovaUI project folder
-cd c:\Users\NishadKindre\MEDTIGO-MASTER\nova-ui
+cd c:\Users\NishadKindre\MEDTIGO-MASTER\nova-ui-elements
 
 # Build your package
 npm run build
@@ -29,7 +29,7 @@ npm run build
 npm pack
 ```
 
-This creates a file like `nova-ui-1.0.0.tgz` in your project root.
+This creates a file like `nova-ui-elements-1.0.0.tgz` in your project root.
 
 ### Step 2: Create a Test React Application
 
@@ -38,15 +38,15 @@ This creates a file like `nova-ui-1.0.0.tgz` in your project root.
 cd ..
 
 # Create a new React app for testing
-npx create-react-app test-nova-ui-app
-cd test-nova-ui-app
+npx create-react-app test-nova-ui-elements-app
+cd test-nova-ui-elements-app
 ```
 
 ### Step 3: Install Your Local Package
 
 ```bash
 # Install the packed version of your package
-npm install ../nova-ui/nova-ui-1.0.0.tgz
+npm install ../nova-ui-elements/nova-ui-elements-1.0.0.tgz
 ```
 
 ### Step 4: Test Your Components
@@ -55,7 +55,7 @@ Replace the contents of `src/App.js` with a comprehensive test:
 
 ```javascript
 import React, { useState } from 'react';
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 import './App.css';
 
 function App() {
@@ -206,7 +206,7 @@ npx create-react-app test-link-app
 cd test-link-app
 
 # Link to your package
-npm link nova-ui
+npm link nova-ui-elements
 ```
 
 ### Step 3: Development Workflow
@@ -214,7 +214,7 @@ npm link nova-ui
 ```bash
 # Make changes to your NovaUI components
 # Then rebuild:
-cd ../nova-ui
+cd ../nova-ui-elements
 npm run build
 
 # Changes are immediately available in test app!
@@ -226,7 +226,7 @@ npm start
 
 ```bash
 # In test app
-npm unlink nova-ui
+npm unlink nova-ui-elements
 
 # In NovaUI folder
 npm unlink
@@ -402,7 +402,7 @@ Add to your `package.json`:
   "scripts": {
     "build": "rollup -c",
     "playground": "webpack serve --config playground/webpack.config.js",
-    "test:local": "npm pack && echo 'Package created! Test with: npm install ./nova-ui-*.tgz'"
+    "test:local": "npm pack && echo 'Package created! Test with: npm install ./nova-ui-elements-*.tgz'"
   }
 }
 ```
@@ -526,15 +526,15 @@ npm pack
 
 # 4. Test in fresh environment
 cd ../
-mkdir nova-ui-test && cd nova-ui-test
+mkdir nova-ui-elements-test && cd nova-ui-elements-test
 npm init -y
-npm install ../nova-ui/nova-ui-*.tgz
+npm install ../nova-ui-elements/nova-ui-elements-*.tgz
 
 # 5. Quick import test
 node -e "
-const { Button, Input } = require('nova-ui');
+const { Button, Input } = require('nova-ui-elements');
 console.log('✅ CommonJS import works');
-console.log('Components:', Object.keys(require('nova-ui')));
+console.log('Components:', Object.keys(require('nova-ui-elements')));
 "
 ```
 
@@ -544,7 +544,7 @@ console.log('Components:', Object.keys(require('nova-ui')));
 # 6. Create React test app
 npx create-react-app react-test
 cd react-test
-npm install ../nova-ui/nova-ui-*.tgz
+npm install ../nova-ui-elements/nova-ui-elements-*.tgz
 
 # 7. Test components (use the App.js example above)
 npm start
@@ -556,7 +556,7 @@ npm start
 # 8. Test with TypeScript
 npx create-react-app ts-test --template typescript
 cd ts-test
-npm install ../nova-ui/nova-ui-*.tgz
+npm install ../nova-ui-elements/nova-ui-elements-*.tgz
 
 # Create test component to verify types
 ```
@@ -576,17 +576,17 @@ npm install ../nova-ui/nova-ui-*.tgz
 npm pack --dry-run
 
 # Check bundle size
-ls -la nova-ui-*.tgz
+ls -la nova-ui-elements-*.tgz
 
 # Detailed analysis
-tar -tzf nova-ui-*.tgz | head -20
+tar -tzf nova-ui-elements-*.tgz | head -20
 ```
 
 ### 3. Performance Testing
 
 ```javascript
 // Test component render performance
-import { Button } from 'nova-ui';
+import { Button } from 'nova-ui-elements';
 
 const ManyButtons = () => {
   return (
@@ -709,8 +709,8 @@ jobs:
           mkdir test-install
           cd test-install
           npm init -y
-          npm install ../nova-ui-*.tgz
-          node -e "console.log(require('nova-ui'))"
+          npm install ../nova-ui-elements-*.tgz
+          node -e "console.log(require('nova-ui-elements'))"
 ```
 
 By following these testing methods, you'll catch issues early and ensure a smooth experience for developers using your NovaUI package!

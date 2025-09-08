@@ -15,7 +15,7 @@ An input field is an interactive element that lets users:
 ## 🚀 Basic Usage
 
 ```javascript
-import { Input } from 'nova-ui';
+import { Input } from 'nova-ui-elements';
 
 function MyComponent() {
   return <Input placeholder="Type something here..." onChange={e => console.log(e.target.value)} />;
