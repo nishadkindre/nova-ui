@@ -1,6 +1,6 @@
 {
   "name": "nova-ui-elements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern React component library for building stellar user interfaces.",
   "type": "module",
   "main": "dist/index.js",
