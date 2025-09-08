@@ -19,7 +19,7 @@ Before you start, make sure you have:
 Open your terminal in your React project folder and run:
 
 ```bash
-npm install nova-ui
+npm install nova-ui-elements
 ```
 
 **What this does:** Downloads the NovaUI library and adds it to your project's dependencies.
@@ -29,7 +29,7 @@ npm install nova-ui
 In your React component file (usually `.jsx` or `.tsx`), add this import:
 
 ```javascript
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 ```
 
 **What this does:** Brings the Button and Input components into your file so you can use them.
@@ -40,7 +40,7 @@ Let's create a simple example:
 
 ```javascript
 import React from 'react';
-import { Button } from 'nova-ui';
+import { Button } from 'nova-ui-elements';
 
 function App() {
   const handleClick = () => {
@@ -70,7 +70,7 @@ export default App;
 NovaUI components come with built-in styles, but you can customize them:
 
 ```javascript
-import { Button, Input } from 'nova-ui';
+import { Button, Input } from 'nova-ui-elements';
 
 function MyForm() {
   return (
@@ -103,7 +103,7 @@ function MyForm() {
 
 ```javascript
 import React, { useState } from 'react';
-import { Input, Button } from 'nova-ui';
+import { Input, Button } from 'nova-ui-elements';
 
 function ContactForm() {
   const [email, setEmail] = useState('');
@@ -134,7 +134,7 @@ function ContactForm() {
 
 ```javascript
 import React, { useState } from 'react';
-import { Button } from 'nova-ui';
+import { Button } from 'nova-ui-elements';
 
 function LoadingButton() {
   const [loading, setLoading] = useState(false);
@@ -195,8 +195,8 @@ function ResponsiveExample() {
 
 **1. "Module not found" error**
 
-- Make sure you installed NovaUI: `npm install nova-ui`
-- Check your import statement: `import { Button } from 'nova-ui';`
+- Make sure you installed NovaUI: `npm install nova-ui-elements`
+- Check your import statement: `import { Button } from 'nova-ui-elements';`
 
 **2. Components don't show up**
 

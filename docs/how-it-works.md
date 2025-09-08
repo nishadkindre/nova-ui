@@ -9,7 +9,7 @@ NovaUI is built like a well-organized toolbox where each tool (component) has it
 ### File Structure Explained
 
 ```
-nova-ui/
+nova-ui-elements/
 ├── src/                    # Source code (the actual components)
 │   ├── components/         # Individual UI components
 │   │   ├── Button/        # Everything related to buttons

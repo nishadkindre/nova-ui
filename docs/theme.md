@@ -20,7 +20,7 @@ Our color system is organized into logical groups that make it easy to create co
 ### Primary Colors (Main Brand Colors)
 
 ```javascript
-import { colors } from 'nova-ui';
+import { colors } from 'nova-ui-elements';
 
 // Primary blue - used for main actions
 colors.primary.main; // '#2563eb' - Main blue
@@ -115,7 +115,7 @@ Our typography system provides consistent text styling across your app.
 ### Font Sizes
 
 ```javascript
-import { typography } from 'nova-ui';
+import { typography } from 'nova-ui-elements';
 
 typography.fontSize.sm; // '14px' - Small text
 typography.fontSize.md; // '16px' - Medium text (default)
@@ -159,7 +159,7 @@ typography.lineHeight.tight; // 1.25 - Compact spacing
 ### In Your Components
 
 ```javascript
-import { colors, typography } from 'nova-ui';
+import { colors, typography } from 'nova-ui-elements';
 
 function CustomComponent() {
   return (
@@ -199,7 +199,7 @@ function CustomComponent() {
 ### Creating Consistent Styles
 
 ```javascript
-import { colors, typography } from 'nova-ui';
+import { colors, typography } from 'nova-ui-elements';
 
 // Create reusable style objects
 const cardStyles = {
@@ -244,7 +244,7 @@ function ProductCard({ product }) {
 ### 1. Alert Component Using Theme
 
 ```javascript
-import { colors, typography } from 'nova-ui';
+import { colors, typography } from 'nova-ui-elements';
 
 function Alert({ type = 'info', children }) {
   const getAlertStyles = () => {
@@ -298,7 +298,7 @@ function AlertExamples() {
 ### 2. Navigation Menu Using Theme
 
 ```javascript
-import { colors, typography } from 'nova-ui';
+import { colors, typography } from 'nova-ui-elements';
 
 function Navigation() {
   const navStyles = {
@@ -367,7 +367,7 @@ function Navigation() {
 ### 3. Form Layout Using Theme
 
 ```javascript
-import { colors, typography } from 'nova-ui';
+import { colors, typography } from 'nova-ui-elements';
 
 function ThemedForm() {
   const formStyles = {
@@ -450,7 +450,7 @@ function ThemedForm() {
 You can extend or modify the theme to match your brand:
 
 ```javascript
-import { colors as defaultColors, typography as defaultTypography } from 'nova-ui';
+import { colors as defaultColors, typography as defaultTypography } from 'nova-ui-elements';
 
 // Create your custom theme
 export const myTheme = {
