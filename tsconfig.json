@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript for better performance
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "ES6"],
+
+    // Enable all strict type checking options for better code quality
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Module resolution settings
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    // JSX settings for React - using classic transform for build compatibility
+    "jsx": "react",
+
+    // Output settings
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.tsx", "**/*.stories.tsx"]
+}
