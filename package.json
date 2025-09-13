@@ -1,6 +1,6 @@
 {
   "name": "nova-ui-elements",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A modern React component library for building stellar user interfaces.",
   "type": "module",
   "main": "dist/index.js",
@@ -37,7 +37,7 @@
     "email": "nishadkindre@gmail.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/nishadkindre/nova-ui#readme",
+  "homepage": "https://nova-ui.vercel.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/nishadkindre/nova-ui.git"
