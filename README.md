@@ -139,8 +139,10 @@ src/
 
 ## 🤝 Contributing
 
-This is a learning project! Feel free to:
 
+We welcome contributions! Please read our [Contributing Guidelines](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md) before getting started.
+
+How to contribute:
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
